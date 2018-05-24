@@ -36,7 +36,6 @@ class Solution(object):
         
         dp = [cost[0], cost[1]]
         
-        
         for i in range(2, l):
             dp.append(cost[i] + min(dp[i-1], dp[i-2]))
         
